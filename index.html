@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1724">
+  <title>Sri Lanka · RevLine Atlas</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="map" aria-label="Interactive map of Sri Lanka"></main>
+  <header class="map-header">
+    <div class="identity"><span class="brand">REVLINE <span>ATLAS</span></span><h1>Sri Lanka<span class="title-dot">.</span></h1></div>
+    <button id="whole-island" class="button yellow" title="Return to the whole island">Whole island <span aria-hidden="true">↗</span></button>
+  </header>
+  <aside class="explore panel" aria-label="Explore the map">
+    <label for="place">Jump to a place</label>
+    <select id="place">
+      <option value="">Choose a town or city…</option>
+      <option value="landmarks">Both buildings · Bambalapitiya</option>
+      <option value="unity-plaza">Unity Plaza · Bambalapitiya</option>
+      <option value="majestic-city">Majestic City · Bambalapitiya</option>
+      <option value="colombo">Colombo</option><option value="kandy">Kandy</option>
+      <option value="galle">Galle Fort</option><option value="jaffna">Jaffna</option>
+      <option value="trincomalee">Trincomalee</option><option value="batticaloa">Batticaloa</option>
+      <option value="anuradhapura">Anuradhapura</option><option value="polonnaruwa">Polonnaruwa</option>
+      <option value="negombo">Negombo</option><option value="kurunegala">Kurunegala</option>
+      <option value="nuwaraeliya">Nuwara Eliya</option><option value="ella">Ella</option>
+      <option value="ratnapura">Ratnapura</option><option value="matara">Matara</option>
+      <option value="hambantota">Hambantota</option><option value="sigiriya">Sigiriya</option>
+    </select>
+    <div class="layer-toggles" aria-label="Map layers">
+      <button class="toggle" id="labels" aria-pressed="true">Names</button>
+      <button class="toggle" id="buildings" aria-pressed="true">Buildings</button>
+      <button class="toggle" id="trees" aria-pressed="true">Trees</button>
+    </div>
+    <div class="view-picker" role="group" aria-label="Bird’s-eye view">
+      <button class="toggle" id="view-front" data-view="front" aria-pressed="true">Front</button>
+      <button class="toggle" id="view-right" data-view="right" aria-pressed="false">Right</button>
+      <button class="toggle" id="view-back" data-view="back" aria-pressed="false">Back</button>
+      <button class="toggle" id="view-left" data-view="left" aria-pressed="false">Left</button>
+    </div>
+    <p id="map-hint" class="hint">Scroll or pinch to explore. Click a road or building for details.</p>
+  </aside>
+  <section id="feature" class="feature panel" aria-label="Selected map feature" hidden>
+    <button id="close-feature" class="close" aria-label="Close feature details">×</button>
+    <span id="feature-type" class="small-label"></span><h2 id="feature-name"></h2>
+    <p id="feature-detail"></p><span id="feature-coordinates" class="coordinates"></span>
+  </section>
+  <div class="map-controls" aria-label="Map zoom controls">
+    <div id="north" class="north" aria-label="North direction"><span aria-hidden="true">▲</span><small>N</small></div>
+    <div class="zoom-buttons panel"><button id="zoom-in" aria-label="Zoom in">+</button><span id="zoom-level" aria-label="Current zoom level">7</span><button id="zoom-out" aria-label="Zoom out">−</button></div>
+  </div>
+  <footer class="map-footer"><div class="legend"><span><i class="legend-road"></i>Roads</span><span><i class="legend-forest"></i>Forest</span><span><i class="legend-building"></i>Buildings</span></div><button id="about" class="about-button">About this map</button></footer>
+  <div id="status" class="status" role="status" aria-live="polite">Opening Sri Lanka…</div>
+  <div id="load-error" class="load-error panel" role="alert" hidden><h2>The map couldn’t load</h2><p id="error-detail"></p><button id="retry" class="button yellow">Try again</button></div>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button id="close-about" class="close" aria-label="Close about this map">×</button>
+    <h2 id="about-title">A whole island.<br>A familiar world.</h2>
+    <p>Sri Lanka, drawn in RevLine’s cartoon racing style. Explore the island, then zoom into its streets and mapped building footprints.</p>
+    <dl><div><dt>Map data</dt><dd>OpenStreetMap via Protomaps<br>26 October 2026 snapshot</dd></div><div><dt>Zoom</dt><dd>Up to level 22 · crisp vector geometry</dd></div><div><dt>Available detail</dt><dd>Source detail through level 15. Further zoom enlarges that same geometry.</dd></div></dl>
+    <p class="data-note">This is not Google Maps data. Coverage depends on OpenStreetMap: missing buildings stay missing. Roof colours, forest texture and road markings are illustrative, not surveyed. Footprints and road paths come from the map data.</p>
+    <p class="data-note">Choose Front, Right, Back or Left to see the whole map from four bird’s-eye directions. Unity Plaza and Majestic City have a separate 2D illustration for each view. Rear and unseen side details are approximate artistic interpretations; the artwork has finite image resolution.</p>
+    <p class="data-note">Everything needed to view this map is in this folder, including the country archive. No account or internet connection is needed.</p>
+    <p class="credits"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a> · <a href="https://protomaps.com" target="_blank" rel="noreferrer">Protomaps</a> · <a href="https://maplibre.org" target="_blank" rel="noreferrer">MapLibre</a></p>
+  </dialog>
+  <script src="vendor/maplibre-gl.js"></script>
+  <script src="vendor/pmtiles.js"></script>
+  <script src="map-style.js"></script>
+  <script src="landmark.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

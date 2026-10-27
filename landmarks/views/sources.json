@@ -1,0 +1,165 @@
+{
+  "created": "2026-10-27",
+  "mode": "built-in image_gen.imagegen edit",
+  "purpose": "Three additional compass views per landmark; current front assets remain unchanged",
+  "views": {
+    "front": {
+      "bearing": -148,
+      "corner": "northeast"
+    },
+    "right": {
+      "bearing": -58,
+      "corner": "southeast"
+    },
+    "back": {
+      "bearing": 32,
+      "corner": "southwest"
+    },
+    "left": {
+      "bearing": 122,
+      "corner": "northwest"
+    }
+  },
+  "limitations": "Rear and unseen side facades are artistic interpretations. Directional image camera calibration is constant across navigation; no claim of survey-level geometry or exact roof continuity.",
+  "referencesConsulted": [
+    "https://unityplaza.lk/",
+    "https://www.steradiancapital.com/track-record/asset-management-and-refurbishment-shopping-centre",
+    "https://www.majesticcity.lk/"
+  ],
+  "files": {
+    "majestic-back.png": {
+      "sha256": "d11df5b59b199e1b80e63a2790ff54b02f1835f6424d77ca3bfc2dd1f973cd5d",
+      "dimensions": [
+        1325,
+        1187
+      ],
+      "mode": "RGBA",
+      "alphaBounds32": [
+        30,
+        97,
+        1312,
+        1127
+      ]
+    },
+    "majestic-left.png": {
+      "sha256": "ab514024f24a421f76d298856d6e881c4ee6b44dc9df68fa2a2e2383a3c16dc8",
+      "dimensions": [
+        1320,
+        1192
+      ],
+      "mode": "RGBA",
+      "alphaBounds32": [
+        24,
+        103,
+        1304,
+        1182
+      ]
+    },
+    "majestic-right.png": {
+      "sha256": "76925c27d59f8943d403d387a16df98c49b0a92dd31ca2b7b518a8acff6d3b00",
+      "dimensions": [
+        1325,
+        1187
+      ],
+      "mode": "RGBA",
+      "alphaBounds32": [
+        23,
+        77,
+        1304,
+        1138
+      ]
+    },
+    "majestic-width-left-guide.png": {
+      "sha256": "c2145e8855cc8fbddbbfb60f4daab5e57c47f951752eda533ba36517672bbe72",
+      "dimensions": [
+        1450,
+        1350
+      ],
+      "mode": "RGB"
+    },
+    "majestic-width-right-guide.png": {
+      "sha256": "f064e0c5941723e36a2b885c4f663de6d7805134fe517119187324658f475fd2",
+      "dimensions": [
+        1450,
+        1350
+      ],
+      "mode": "RGB"
+    },
+    "prompts/majestic-back.txt": {
+      "sha256": "1de288b5ff247ab624f12bec54f1bd90d177cd49a38499be8430eeb053c2d171"
+    },
+    "prompts/majestic-left.txt": {
+      "sha256": "5a3bcd9207166e6ce769bde03bfce447ae734b587ea9b6363c99bb244c64c9b7"
+    },
+    "prompts/majestic-right.txt": {
+      "sha256": "a6701f5dfc63fbcfaff9ba903fb355674b550063dcbdc219a5499f6d9ece2af4"
+    },
+    "prompts/unity-back.txt": {
+      "sha256": "6ab727dd10169769bc2a709fe15f46dfe43c2aad2475a570752ac44b4d1f3158"
+    },
+    "prompts/unity-left.txt": {
+      "sha256": "7759c0f0519c802b9d58b36a2444f263bf041c56f81b0fa31e66476dd0e24ed1"
+    },
+    "prompts/unity-right.txt": {
+      "sha256": "bb0f803024e5d62889f5bb59f8ac07e533e6a2186e0980c6745409ccf902b7eb"
+    },
+    "unity-back.png": {
+      "sha256": "f2d71ffe73b0ceb13825ea7b5543219752b772889f6cb645dfbb42a5dc10e8ce",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alphaBounds32": [
+        207,
+        13,
+        1328,
+        1017
+      ]
+    },
+    "unity-left.png": {
+      "sha256": "2a5a6eeaeb80224585af92fd5b5cf41305747161961e48c751207bd98c63e38f",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alphaBounds32": [
+        302,
+        34,
+        1312,
+        1014
+      ]
+    },
+    "unity-right.png": {
+      "sha256": "5f4807d174807198795b7cc8580c5dd1010ee2763feb035d71039763dc72da3e",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alphaBounds32": [
+        235,
+        3,
+        1333,
+        1022
+      ]
+    },
+    "unity-width-left-guide.png": {
+      "sha256": "cfbd3ca6b1fc5adf7eb53b8eb1d71888f02fc102df41013d685e366c2a21fdf4",
+      "dimensions": [
+        1450,
+        1350
+      ],
+      "mode": "RGB"
+    },
+    "unity-width-right-guide.png": {
+      "sha256": "096d7dbf116e0ba727b47e3b49c1c55d9336cf3c730a1f983e33bc08bf10f1e9",
+      "dimensions": [
+        1450,
+        1350
+      ],
+      "mode": "RGB"
+    }
+  }
+}

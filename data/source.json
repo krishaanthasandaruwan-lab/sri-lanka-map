@@ -1,0 +1,52 @@
+{
+  "source": "https://build.protomaps.com/20261026.pmtiles",
+  "provider": "Protomaps",
+  "basemap_version": "4.15.2",
+  "osm_replication_time": "2026-10-26T04:00:00Z",
+  "extracted_on": "2026-10-27",
+  "bounds": [
+    79.3,
+    5.7,
+    82.1,
+    10.15
+  ],
+  "source_minzoom": 0,
+  "source_maxzoom": 15,
+  "viewer_maxzoom": 22,
+  "addressed_tiles": 140070,
+  "deduplicated_tile_entries": 64706,
+  "bytes": 175747932,
+  "sha256": "1ce971ec3f52e8320a0fe154477cf39d2a6ec9fa12b90d5d873a0dcf51b73587",
+  "extractor": "go-pmtiles 1.31.2",
+  "command": "pmtiles extract https://build.protomaps.com/20261026.pmtiles data/sri-lanka.pmtiles --bbox=79.3,5.7,82.1,10.15 --download-threads=4",
+  "attribution": "\u00a9 OpenStreetMap contributors; Protomaps",
+  "license": "https://www.openstreetmap.org/copyright",
+  "glyph_scan": {
+    "tiles": 140070,
+    "names": 308430,
+    "ranges": [
+      0,
+      256,
+      1024,
+      2816,
+      3328,
+      7680,
+      8192,
+      8448,
+      12288,
+      21248,
+      22784,
+      28160,
+      29440,
+      35840,
+      36096,
+      36864,
+      46080,
+      46848,
+      47104,
+      49664,
+      53504,
+      127744
+    ]
+  }
+}

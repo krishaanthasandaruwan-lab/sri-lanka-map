@@ -1,0 +1,21 @@
+{
+  "created": "2026-10-27",
+  "generator": "built-in image_gen.imagegen",
+  "spriteDimensions": [
+    1536,
+    1024
+  ],
+  "transparent": true,
+  "mapFeatureId": 35184714032280,
+  "mapPoi": [
+    79.85515594482422,
+    6.893515547074671
+  ],
+  "sha256": {
+    "unity-plaza.png": "dad04c6eeb1889e28e44eab0ebbf540aca33862a32ec41878fe4b7c02301ee9d",
+    "footprint.geojson": "f9e13b270de53a09c993c59ff8e976cd2a655a5246556bfb24ecb549573fe588",
+    "references/refurbished-corner.jpg": "99d89805d79a3e08b21e7293060fac5d02387e0a2dee3b96826d04aa04a15c7e",
+    "references/official-video-03.jpg": "bb7ca123fd5546b0c255c5fbb5b6e1e85d711652b11d190d7661d4fbff048df2",
+    "prompt.txt": "dd38bb4b7f7e535e40cc5dbba7ffc353c29c83c7888fdb5ef63c6ff8414bed33"
+  }
+}

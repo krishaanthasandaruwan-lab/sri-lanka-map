@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+__pycache__/
+*.zip
+*.tar.gz
+
+# PMTiles archive (176MB exceeds GitHub 100MB limit; see data/source.json to download/extract)
+data/*.pmtiles

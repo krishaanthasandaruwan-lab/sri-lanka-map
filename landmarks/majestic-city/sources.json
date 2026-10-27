@@ -1,0 +1,58 @@
+{
+  "created": "2026-10-27",
+  "source": "User-supplied Google Flow JPEG",
+  "originalFileName": "Re-rendering_city_asset_facade_a\u2026_2K_20261027032922.jpg",
+  "backgroundExtraction": "built-in image_gen.imagegen; prompt stored in cutout-prompt.txt",
+  "mapFeatureId": 35184580903184,
+  "files": {
+    "original-flow.jpg": {
+      "sha256": "8f712a4304e8b14d6922761a7fa112b15e0706327b806f8ec1d47d40e40b5297",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "majestic-city.png": {
+      "sha256": "c97055da12e7e1381cbb00fbff35b7abb8df92997f7152a22ce617e35ca99d5f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    "footprint.geojson": {
+      "sha256": "48337627bf00d42680e15193aa7cefa967cbcf5d2d96608d4f26b07baed82b1b"
+    },
+    "cutout-prompt.txt": {
+      "sha256": "d3070ab001d5e81fa2c467f04c61cf2c7b722f0b721aa78b036ea96c3df7793a"
+    },
+    "majestic-city-aligned.png": {
+      "sha256": "a7f20c6ff3b065702b19ee22d9d4c37655a1697a62f0f006b95cc1442d560ace",
+      "dimensions": [
+        1325,
+        1187
+      ],
+      "mode": "RGBA"
+    },
+    "alignment-prompt.txt": {
+      "sha256": "81b09987ef812d60d3c82b10489a05926ed4dbed8ca09451ccd1afb8c37fa8ca"
+    },
+    "camera-guide.png": {
+      "sha256": "ee12b4b65fe4f589f6572f3630e82e3c522152b4aa702b11480254c691c9e096",
+      "dimensions": [
+        1400,
+        1254
+      ],
+      "mode": "RGB"
+    }
+  },
+  "cameraCorrection": {
+    "mode": "built-in image_gen.imagegen edit",
+    "asset": "majestic-city-aligned.png",
+    "prompt": "alignment-prompt.txt",
+    "guide": "camera-guide.png",
+    "requested": "Align Galle Road frontage with Unity Plaza; preserve upright walls",
+    "note": "Selected camera edit; front slope measured about 23.2 degrees. Side/depth remains illustrative, not an exact all-corner fit."
+  }
+}
